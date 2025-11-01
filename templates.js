@@ -35,6 +35,9 @@ function cartSumHTML(subtotal, deliveryCost, total) {
                     <div class="delivery"><strong>Lieferkosten:</strong> ${deliveryCost.toFixed(2).replace('.', ',')}€</div>
                     <div class="total"><strong>Gesamt:</strong> ${total.toFixed(2).replace('.', ',')}€</div>
                 </div>
+                <div class="cart-actions">
+                    <button class="checkout-button" onclick="checkout()">Jetzt bestellen</button>
+                </div>
             `;
     
 };
