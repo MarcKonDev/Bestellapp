@@ -96,6 +96,25 @@ function updateCart() {
     });
 };
 
+function checkout() {
+    if (cart.length === 0) return; // Falls Warenkorb leer ist, nichts tun
+
+    // Warenkorb leeren
+    cart = [];
+    updateCart();
+
+    // Testbestellungs-Meldung einfügen
+    const cartAreas = [
+        document.getElementById('cart_sidebar'),
+        document.getElementById('cart_overlay_content')
+    ];
+
+    cartAreas.forEach(area => {
+        if (!area) return;
+        area.innerHTML = orderConfHTML();
+    });
+}
+
 window.addEventListener('resize', () => {
     const breakpoint = 500;
     if (window.innerWidth >= breakpoint) {

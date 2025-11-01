@@ -45,3 +45,11 @@ function cartSumHTML(subtotal, deliveryCost, total) {
 function elseHtml() {
     return `<p class="cart_note">Dein Warenkorb ist leer..</p>`;
 };
+
+function orderConfHTML() {
+    return `
+                <div class="order_confirmation">
+                    <h3>Bestellung erfolgreich!</h3>
+                </div>
+            `
+}
