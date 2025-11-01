@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noodle Paradise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="init()">
+    <div class="navigation_design">
+        <nav>
+            <a href="index.html"><img src="./img/Logo.svg" alt="Logo"></a>
+            <span class="burger_menu">&#9776;</span>
+        </nav>
+    </div>
+
+    <main>
+        <div class="content">
+            <div class="head_img">
+                <img id="noodle_head" src="./img/asia-noodle-head.jpg" alt="">
+                <img id="box_icon" src="./img/noodle-box-icon.png" alt="">
+            </div>
+            <div class="head_text">
+                <h1>Noodle Paradise</h1>
+                <p>9.872 Bewertungen (4,8 von 5 Sterne)</p>
+            </div>
+
+            <div class="recipes_section">
+                <img src="./img/asia-noodle.png" alt="">
+                <h3>Hauptgerichte</h3>
+                <div id="main_dishes"></div>
+            </div>
+
+            <div class="recipes_section">
+                <img src="./img/asia-noodle.png" alt="">
+                <h3>Beilagen</h3>
+                <p>coming soon..</p>
+                <div id="desert"></div>
+            </div>
+
+            <!-- Sticky Warenkorb-Button für Overlay -->
+            <button class="cart_toggle_button" onclick="toggleCart()">🛒 Warenkorb</button>
+
+            <!-- Overlay Warenkorb -->
+            <div id="cart_overlay" class="cart_overlay d_none">
+                <button class="close_cart" onclick="toggleCart()">×</button>
+                <div id="cart_overlay_content" class="cart_area">
+                    <!-- Beispiel: Cart Items -->
+                    <div class="cart-item-line">
+                        <span class="cart-name">Noodle Bowl</span>
+                        <span class="cart-price">€9,50</span>
+                    </div>
+
+                    <!-- Pickup-Schalter Overlay -->
+                    <div class="pickup-container">
+                        <label>
+                            <input type="checkbox" id="pickupOverlay">
+                            <span class="slider"></span>
+                            Selbst abholen
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Warenkorb -->
+        <div class="cart_content">
+            <div class="headline_cart">
+                <h2>Warenkorb</h2>
+            </div>
+            <div id="cart_sidebar" class="cart_area">
+                <!-- Beispiel: Cart Items -->
+                <div class="cart-item-line">
+                    <span class="cart-name">Noodle Bowl</span>
+                    <span class="cart-price">€9,50</span>
+                </div>                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_design">
+            <p>BestellApp©</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="templates.js"></script>
+</body>
+
+</html>
