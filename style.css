@@ -148,13 +148,18 @@ h1{
 /* #endregion */
 
 /* #region checkout button */
+.cart-actions{
+    display: flex;
+    justify-content: center;
+}
+
 .checkout-button {
     background-color: orange;
     color: white;
     border: none;
     padding: 8px 20px;
     border-radius: 8px;
-    width: 100%;
+    width: 90%;
     font-size: 16px;
     cursor: pointer;
     margin-top: 10px;
