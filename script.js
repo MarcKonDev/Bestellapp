@@ -30,9 +30,11 @@ const recipeHTML = document.getElementById('main_dishes');
 let cart = [];                                              
 const deliveryCost = 5.00;                               
 const cartOverlay = document.getElementById('cart_overlay');
+const scrollHide = document.body;
 
 function toggleCart() {                                     
-    cartOverlay.classList.toggle('d_none');                 
+    cartOverlay.classList.toggle('d_none'); 
+    scrollHide.classList.toggle('hide_scroll'); 
 }
 
 function init() {                                                            
