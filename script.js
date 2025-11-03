@@ -122,7 +122,7 @@ function checkout() {
 window.addEventListener('resize', () => {
     const breakpoint = 500;
     if (window.innerWidth >= breakpoint) {
-        if (!cartOverlay.classList.contains('d_none')) {            // Overlay schließen, wenn es geöffnet ist
+        if (!cartOverlay.classList.contains('d_none')) {          
             cartOverlay.classList.add('d_none');
         }
     }
